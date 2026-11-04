@@ -47,7 +47,7 @@ fun DashboardScreen(
                 Text(text = "RAM USAGE", color = CyberTextSecondary, fontSize = 12.sp)
                 Text(text = "$ramUsedMb MB / $ramTotalMb MB", color = CyberNeonCyan, fontSize = 18.sp)
                 LinearProgressIndicator(
-                    progress = { ramUsedMb.toFloat() / ramTotalMb.toFloat() },
+                    progress = ramUsedMb.toFloat() / ramTotalMb.toFloat(),
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(top = 8.dp),
